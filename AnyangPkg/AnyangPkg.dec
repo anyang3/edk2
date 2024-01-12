@@ -1,0 +1,19 @@
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = AnyangPkg
+  PACKAGE_GUID                   = 35b7a366-3789-465f-b6dc-98b2acab0e17
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+
+[LibraryClasses]
+
+
+[Guids]
+ 
+
+[Ppis]
+  
+
+[Protocols]

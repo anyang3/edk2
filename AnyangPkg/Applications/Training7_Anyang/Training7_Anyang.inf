@@ -1,0 +1,48 @@
+## @file
+#  This is the shell sorting testing application
+#
+#  Copyright (c) 2009 - 2018, Intel Corporation. All rights reserved.<BR>
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = Training7_Anyang
+  FILE_GUID                      = d857d0ae-d354-4255-34e4-b3a69372dc23
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellCEntryLib
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 EBC
+#
+
+[Sources]
+  Training7_Anyang.h
+  FruFuncLib.c
+  Training7_Anyang.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  EmulatorPkg/EmulatorPkg.dec
+  AmiIpmi2Pkg/AmiIpmi2Pkg.dec
+
+[LibraryClasses]
+  ShellCEntryLib
+  UefiLib
+  DebugLib
+  AmiBmcCommonInterfaceLib
+  AmiSelLib
+
+[Protocols]
+  gEfiSmbiosProtocolGuid
+  gEfiSimpleTextOutProtocolGuid
+  gEfiDxeIpmiTransportProtocolGuid
+
